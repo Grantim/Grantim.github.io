@@ -97,8 +97,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to map old mesh BitSets to new.  <a href="struct_m_r_e_1_1_boolean_result_mapper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_r_e_1_1_graph_cut.html">GraphCut</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_m_r_e_1_1_boolean_result.html">BooleanResult</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure contain boolean result.  <a href="struct_m_r_e_1_1_boolean_result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,47 +126,25 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abe7013f343ea41eb2271eb963a3dfca8"><td class="memItemLeft" align="right" valign="top">FaceBitSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#abe7013f343ea41eb2271eb963a3dfca8">preparePart</a> (const Mesh &amp;origin, const std::vector&lt; FaceBitSet &gt; &amp;components, const FaceBitSet &amp;leftPart, const Mesh &amp;otherMesh, bool needInsideComps, bool originIsA, const AffineXf3f *rigidB2A)</td></tr>
-<tr class="separator:abe7013f343ea41eb2271eb963a3dfca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ecdea713303468e8d6b5a45b8468a76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a4ecdea713303468e8d6b5a45b8468a76">prepareLeft</a> (const Mesh &amp;origin, const std::vector&lt; EdgePath &gt; &amp;cutPaths, FaceBitSet &amp;leftPart)</td></tr>
-<tr class="separator:a4ecdea713303468e8d6b5a45b8468a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bb32fff1f10bcaffc25087250f91628"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a8bb32fff1f10bcaffc25087250f91628">preparePart</a> (const Mesh &amp;origin, std::vector&lt; EdgePath &gt; &amp;cutPaths, Mesh &amp;outMesh, const Mesh &amp;otherMesh, bool needInsidePart, bool needFlip, bool originIsA, const AffineXf3f *rigidB2A, <a class="el" href="struct_m_r_e_1_1_boolean_result_mapper_1_1_maps.html">BooleanResultMapper::Maps</a> *maps)</td></tr>
-<tr class="separator:a8bb32fff1f10bcaffc25087250f91628"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4778de4641a7b33a556931ae2803d00f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a4778de4641a7b33a556931ae2803d00f">connectPreparedParts</a> (Mesh &amp;partA, Mesh &amp;partB, bool pathsHaveLeftHole, const std::vector&lt; EdgePath &gt; &amp;pathsA, const std::vector&lt; EdgePath &gt; &amp;pathsB, const AffineXf3f *rigidB2A, <a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a> *mapper)</td></tr>
-<tr class="separator:a4778de4641a7b33a556931ae2803d00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad87216bc4cd16b377d2370d193f954f3"><td class="memItemLeft" align="right" valign="top">Mesh&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#ad87216bc4cd16b377d2370d193f954f3">doTrivialBooleanOperation</a> (const Mesh &amp;meshACut, const Mesh &amp;meshBCut, <a class="el" href="namespace_m_r_e.html#acb4a2073036a155fa7f07f2fdc347007">BooleanOperation</a> operation, const AffineXf3f *rigidB2A, <a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a> *mapper)</td></tr>
-<tr class="separator:ad87216bc4cd16b377d2370d193f954f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fc31275bb0d2c5578070dd36b7b498a"><td class="memItemLeft" align="right" valign="top">tl::expected&lt; MR::Mesh, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a5fc31275bb0d2c5578070dd36b7b498a">doBooleanOperation</a> (const Mesh &amp;meshACutted, const Mesh &amp;meshBCutted, const std::vector&lt; EdgePath &gt; &amp;cutEdgesA, const std::vector&lt; EdgePath &gt; &amp;cutEdgesB, <a class="el" href="namespace_m_r_e.html#acb4a2073036a155fa7f07f2fdc347007">BooleanOperation</a> operation, const AffineXf3f *rigidB2A, <a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a> *mapper)</td></tr>
-<tr class="separator:a5fc31275bb0d2c5578070dd36b7b498a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4faab346696caac0dd986e1c4af86c34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> tl::expected&lt; MR::Mesh, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a4faab346696caac0dd986e1c4af86c34">doBooleanOperation</a> (const MR::Mesh &amp;meshACut, const MR::Mesh &amp;meshBCut, const std::vector&lt; MR::EdgePath &gt; &amp;cutEdgesA, const std::vector&lt; MR::EdgePath &gt; &amp;cutEdgesB, <a class="el" href="namespace_m_r_e.html#acb4a2073036a155fa7f07f2fdc347007">BooleanOperation</a> operation, const MR::AffineXf3f *rigidB2A=nullptr, <a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a> *mapper=nullptr)</td></tr>
 <tr class="separator:a4faab346696caac0dd986e1c4af86c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba9bfb91f97b045db8c37d7ddc38873a"><td class="memItemLeft" align="right" valign="top">FaceBitSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#aba9bfb91f97b045db8c37d7ddc38873a">fillContourLeftByGraphCut</a> (const MeshTopology &amp;topology, const std::vector&lt; EdgeId &gt; &amp;contour, const EdgeMetric &amp;metric)</td></tr>
-<tr class="separator:aba9bfb91f97b045db8c37d7ddc38873a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26acbffd5aa332518ac7f5ea749f0f13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> MR::FaceBitSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a26acbffd5aa332518ac7f5ea749f0f13">fillContourLeftByGraphCut</a> (const MR::MeshTopology &amp;topology, const std::vector&lt; MR::EdgeId &gt; &amp;contour, const MR::EdgeMetric &amp;metric)</td></tr>
 <tr class="separator:a26acbffd5aa332518ac7f5ea749f0f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47df58ce3af14c49a0051a3dfd9aec3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_r_e_1_1_boolean_result.html">BooleanResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a47df58ce3af14c49a0051a3dfd9aec3b">boolean</a> (const Mesh &amp;meshA, const Mesh &amp;meshB, <a class="el" href="namespace_m_r_e.html#acb4a2073036a155fa7f07f2fdc347007">BooleanOperation</a> opearation, const AffineXf3f *rigidB2A, <a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a> *mapper)</td></tr>
-<tr class="separator:a47df58ce3af14c49a0051a3dfd9aec3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82b23ad477df2fb4f8d071a28f503723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a82b23ad477df2fb4f8d071a28f503723">loadMREAlgorithmsDll</a> ()</td></tr>
-<tr class="separator:a82b23ad477df2fb4f8d071a28f503723"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df9b7935adaeda2d6e9914c59444eff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a2df9b7935adaeda2d6e9914c59444eff">TEST</a> (MREAlgorithms, MeshBoolean)</td></tr>
-<tr class="separator:a2df9b7935adaeda2d6e9914c59444eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad88fd116eef1ce6930ecfb0a426e0633"><td class="memItemLeft" align="right" valign="top"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> <a class="el" href="struct_m_r_e_1_1_boolean_result.html">BooleanResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#ad88fd116eef1ce6930ecfb0a426e0633">boolean</a> (const MR::Mesh &amp;meshA, const MR::Mesh &amp;meshB, <a class="el" href="namespace_m_r_e.html#acb4a2073036a155fa7f07f2fdc347007">BooleanOperation</a> opearation, const MR::AffineXf3f *rigidB2A=nullptr, <a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a> *mapper=nullptr)</td></tr>
 <tr class="separator:ad88fd116eef1ce6930ecfb0a426e0633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f832a9d98395a65b860352f46e27e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a55f832a9d98395a65b860352f46e27e3">operator+=</a> (<a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;a, const <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;b)</td></tr>
-<tr class="memdesc:a55f832a9d98395a65b860352f46e27e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">union operation on two meshes  <a href="namespace_m_r_e.html#a55f832a9d98395a65b860352f46e27e3">More...</a><br /></td></tr>
-<tr class="separator:a55f832a9d98395a65b860352f46e27e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d015e60532fdf3652b46eb5d3eacef7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a7d015e60532fdf3652b46eb5d3eacef7">operator-=</a> (<a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;a, const <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;b)</td></tr>
-<tr class="memdesc:a7d015e60532fdf3652b46eb5d3eacef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">difference operation on two meshes  <a href="namespace_m_r_e.html#a7d015e60532fdf3652b46eb5d3eacef7">More...</a><br /></td></tr>
-<tr class="separator:a7d015e60532fdf3652b46eb5d3eacef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd559e57cfd3f24e9ebb92b26e675a52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#afd559e57cfd3f24e9ebb92b26e675a52">operator*=</a> (<a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;a, const <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;b)</td></tr>
-<tr class="memdesc:afd559e57cfd3f24e9ebb92b26e675a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">intersection operation on two meshes  <a href="namespace_m_r_e.html#afd559e57cfd3f24e9ebb92b26e675a52">More...</a><br /></td></tr>
-<tr class="separator:afd559e57cfd3f24e9ebb92b26e675a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0372fc3ccbd135244315e54bf3fb7c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#af0372fc3ccbd135244315e54bf3fb7c1">TEST</a> (MREAlgorithms, MeshBooleanFacade)</td></tr>
-<tr class="separator:af0372fc3ccbd135244315e54bf3fb7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0564f3cf4fc7d781e6eb1e3c40128e"><td class="memItemLeft" align="right" valign="top">Mesh&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a4b0564f3cf4fc7d781e6eb1e3c40128e">partialOffsetMesh</a> (const MeshPart &amp;mp, float offset, const OffsetParameters &amp;params)</td></tr>
-<tr class="separator:a4b0564f3cf4fc7d781e6eb1e3c40128e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a381ff89309bb97c8c5700b1746795a37"><td class="memItemLeft" align="right" valign="top">std::vector&lt; EdgeId &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a381ff89309bb97c8c5700b1746795a37">surroundingContour</a> (const Mesh &amp;mesh, std::vector&lt; EdgeId &gt; e, const EdgeMetric &amp;edgeMetric, const Vector3f &amp;dir)</td></tr>
-<tr class="separator:a381ff89309bb97c8c5700b1746795a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b23ad477df2fb4f8d071a28f503723"><td class="memItemLeft" align="right" valign="top"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a82b23ad477df2fb4f8d071a28f503723">loadMREAlgorithmsDll</a> ()</td></tr>
+<tr class="separator:a82b23ad477df2fb4f8d071a28f503723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2fe59fb83e145b1951889c62dd45a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a1a2fe59fb83e145b1951889c62dd45a2">operator+=</a> (<a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;a, const <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;b)</td></tr>
+<tr class="memdesc:a1a2fe59fb83e145b1951889c62dd45a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">union operation on two meshes  <a href="namespace_m_r_e.html#a1a2fe59fb83e145b1951889c62dd45a2">More...</a><br /></td></tr>
+<tr class="separator:a1a2fe59fb83e145b1951889c62dd45a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ffd04c8e4f0d170bcd728231a8cbac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a43ffd04c8e4f0d170bcd728231a8cbac">operator-=</a> (<a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;a, const <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;b)</td></tr>
+<tr class="memdesc:a43ffd04c8e4f0d170bcd728231a8cbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">difference operation on two meshes  <a href="namespace_m_r_e.html#a43ffd04c8e4f0d170bcd728231a8cbac">More...</a><br /></td></tr>
+<tr class="separator:a43ffd04c8e4f0d170bcd728231a8cbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1b638977f454de1614d2caffc291f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a4a1b638977f454de1614d2caffc291f3">operator*=</a> (<a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;a, const <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;b)</td></tr>
+<tr class="memdesc:a4a1b638977f454de1614d2caffc291f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">intersection operation on two meshes  <a href="namespace_m_r_e.html#a4a1b638977f454de1614d2caffc291f3">More...</a><br /></td></tr>
+<tr class="separator:a4a1b638977f454de1614d2caffc291f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f7142ffa3c4fbaaf6fca4e46789664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> Mesh&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a91f7142ffa3c4fbaaf6fca4e46789664">partialOffsetMesh</a> (const MeshPart &amp;mp, float offset, const OffsetParameters &amp;params={})</td></tr>
+<tr class="separator:a91f7142ffa3c4fbaaf6fca4e46789664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77a3bf655fb87f08c40a5a5808bd1de0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> std::vector&lt; MR::EdgeId &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_m_r_e.html#a77a3bf655fb87f08c40a5a5808bd1de0">surroundingContour</a> (const MR::Mesh &amp;mesh, const std::vector&lt; MR::EdgeId &gt; includeEdgeOrgs, const MR::EdgeMetric &amp;edgeMetric, const MR::Vector3f &amp;dir)</td></tr>
 <tr class="separator:a77a3bf655fb87f08c40a5a5808bd1de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -216,54 +192,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a47df58ce3af14c49a0051a3dfd9aec3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47df58ce3af14c49a0051a3dfd9aec3b">&#9670;&nbsp;</a></span>boolean() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_m_r_e_1_1_boolean_result.html">BooleanResult</a> MRE::boolean </td>
-          <td>(</td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>meshA</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>meshB</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_m_r_e.html#acb4a2073036a155fa7f07f2fdc347007">BooleanOperation</a>&#160;</td>
-          <td class="paramname"><em>opearation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AffineXf3f *&#160;</td>
-          <td class="paramname"><em>rigidB2A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a> *&#160;</td>
-          <td class="paramname"><em>mapper</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad88fd116eef1ce6930ecfb0a426e0633"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad88fd116eef1ce6930ecfb0a426e0633">&#9670;&nbsp;</a></span>boolean() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad88fd116eef1ce6930ecfb0a426e0633">&#9670;&nbsp;</a></span>boolean()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,124 +239,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4778de4641a7b33a556931ae2803d00f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4778de4641a7b33a556931ae2803d00f">&#9670;&nbsp;</a></span>connectPreparedParts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MRE::connectPreparedParts </td>
-          <td>(</td>
-          <td class="paramtype">Mesh &amp;&#160;</td>
-          <td class="paramname"><em>partA</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Mesh &amp;&#160;</td>
-          <td class="paramname"><em>partB</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>pathsHaveLeftHole</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; EdgePath &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pathsA</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; EdgePath &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pathsB</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AffineXf3f *&#160;</td>
-          <td class="paramname"><em>rigidB2A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a> *&#160;</td>
-          <td class="paramname"><em>mapper</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5fc31275bb0d2c5578070dd36b7b498a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fc31275bb0d2c5578070dd36b7b498a">&#9670;&nbsp;</a></span>doBooleanOperation() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">tl::expected&lt;MR::Mesh, std::string&gt; MRE::doBooleanOperation </td>
-          <td>(</td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>meshACutted</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>meshBCutted</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; EdgePath &gt; &amp;&#160;</td>
-          <td class="paramname"><em>cutEdgesA</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; EdgePath &gt; &amp;&#160;</td>
-          <td class="paramname"><em>cutEdgesB</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_m_r_e.html#acb4a2073036a155fa7f07f2fdc347007">BooleanOperation</a>&#160;</td>
-          <td class="paramname"><em>operation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AffineXf3f *&#160;</td>
-          <td class="paramname"><em>rigidB2A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a> *&#160;</td>
-          <td class="paramname"><em>mapper</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4faab346696caac0dd986e1c4af86c34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4faab346696caac0dd986e1c4af86c34">&#9670;&nbsp;</a></span>doBooleanOperation() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4faab346696caac0dd986e1c4af86c34">&#9670;&nbsp;</a></span>doBooleanOperation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,88 +298,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad87216bc4cd16b377d2370d193f954f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad87216bc4cd16b377d2370d193f954f3">&#9670;&nbsp;</a></span>doTrivialBooleanOperation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mesh MRE::doTrivialBooleanOperation </td>
-          <td>(</td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>meshACut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>meshBCut</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_m_r_e.html#acb4a2073036a155fa7f07f2fdc347007">BooleanOperation</a>&#160;</td>
-          <td class="paramname"><em>operation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AffineXf3f *&#160;</td>
-          <td class="paramname"><em>rigidB2A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_m_r_e_1_1_boolean_result_mapper.html">BooleanResultMapper</a> *&#160;</td>
-          <td class="paramname"><em>mapper</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aba9bfb91f97b045db8c37d7ddc38873a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba9bfb91f97b045db8c37d7ddc38873a">&#9670;&nbsp;</a></span>fillContourLeftByGraphCut() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FaceBitSet MRE::fillContourLeftByGraphCut </td>
-          <td>(</td>
-          <td class="paramtype">const MeshTopology &amp;&#160;</td>
-          <td class="paramname"><em>topology</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; EdgeId &gt; &amp;&#160;</td>
-          <td class="paramname"><em>contour</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EdgeMetric &amp;&#160;</td>
-          <td class="paramname"><em>metric</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a26acbffd5aa332518ac7f5ea749f0f13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26acbffd5aa332518ac7f5ea749f0f13">&#9670;&nbsp;</a></span>fillContourLeftByGraphCut() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a26acbffd5aa332518ac7f5ea749f0f13">&#9670;&nbsp;</a></span>fillContourLeftByGraphCut()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -616,14 +350,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afd559e57cfd3f24e9ebb92b26e675a52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd559e57cfd3f24e9ebb92b26e675a52">&#9670;&nbsp;</a></span>operator*=()</h2>
+<a id="a4a1b638977f454de1614d2caffc291f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1b638977f454de1614d2caffc291f3">&#9670;&nbsp;</a></span>operator*=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp; MRE::operator*= </td>
+          <td class="memname"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a>&amp; MRE::operator*= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -646,14 +380,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a55f832a9d98395a65b860352f46e27e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55f832a9d98395a65b860352f46e27e3">&#9670;&nbsp;</a></span>operator+=()</h2>
+<a id="a1a2fe59fb83e145b1951889c62dd45a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a2fe59fb83e145b1951889c62dd45a2">&#9670;&nbsp;</a></span>operator+=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp; MRE::operator+= </td>
+          <td class="memname"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a>&amp; MRE::operator+= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -676,14 +410,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7d015e60532fdf3652b46eb5d3eacef7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d015e60532fdf3652b46eb5d3eacef7">&#9670;&nbsp;</a></span>operator-=()</h2>
+<a id="a43ffd04c8e4f0d170bcd728231a8cbac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ffd04c8e4f0d170bcd728231a8cbac">&#9670;&nbsp;</a></span>operator-=()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp; MRE::operator-= </td>
+          <td class="memname"><a class="el" href="exports_8h.html#abe50bf357de320c342796866fe78ed44">MREALGORITHMS_API</a> <a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a>&amp; MRE::operator-= </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_m_r_e_1_1_transformed_mesh.html">TransformedMesh</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -706,8 +440,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b0564f3cf4fc7d781e6eb1e3c40128e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b0564f3cf4fc7d781e6eb1e3c40128e">&#9670;&nbsp;</a></span>partialOffsetMesh()</h2>
+<a id="a91f7142ffa3c4fbaaf6fca4e46789664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f7142ffa3c4fbaaf6fca4e46789664">&#9670;&nbsp;</a></span>partialOffsetMesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -741,210 +475,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ecdea713303468e8d6b5a45b8468a76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ecdea713303468e8d6b5a45b8468a76">&#9670;&nbsp;</a></span>prepareLeft()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MRE::prepareLeft </td>
-          <td>(</td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; EdgePath &gt; &amp;&#160;</td>
-          <td class="paramname"><em>cutPaths</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">FaceBitSet &amp;&#160;</td>
-          <td class="paramname"><em>leftPart</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe7013f343ea41eb2271eb963a3dfca8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe7013f343ea41eb2271eb963a3dfca8">&#9670;&nbsp;</a></span>preparePart() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FaceBitSet MRE::preparePart </td>
-          <td>(</td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; FaceBitSet &gt; &amp;&#160;</td>
-          <td class="paramname"><em>components</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const FaceBitSet &amp;&#160;</td>
-          <td class="paramname"><em>leftPart</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>otherMesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>needInsideComps</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>originIsA</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AffineXf3f *&#160;</td>
-          <td class="paramname"><em>rigidB2A</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8bb32fff1f10bcaffc25087250f91628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bb32fff1f10bcaffc25087250f91628">&#9670;&nbsp;</a></span>preparePart() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MRE::preparePart </td>
-          <td>(</td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; EdgePath &gt; &amp;&#160;</td>
-          <td class="paramname"><em>cutPaths</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Mesh &amp;&#160;</td>
-          <td class="paramname"><em>outMesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>otherMesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>needInsidePart</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>needFlip</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>originIsA</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AffineXf3f *&#160;</td>
-          <td class="paramname"><em>rigidB2A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_m_r_e_1_1_boolean_result_mapper_1_1_maps.html">BooleanResultMapper::Maps</a> *&#160;</td>
-          <td class="paramname"><em>maps</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a381ff89309bb97c8c5700b1746795a37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a381ff89309bb97c8c5700b1746795a37">&#9670;&nbsp;</a></span>surroundingContour() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;EdgeId&gt; MRE::surroundingContour </td>
-          <td>(</td>
-          <td class="paramtype">const Mesh &amp;&#160;</td>
-          <td class="paramname"><em>mesh</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; EdgeId &gt;&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EdgeMetric &amp;&#160;</td>
-          <td class="paramname"><em>edgeMetric</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Vector3f &amp;&#160;</td>
-          <td class="paramname"><em>dir</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a77a3bf655fb87f08c40a5a5808bd1de0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77a3bf655fb87f08c40a5a5808bd1de0">&#9670;&nbsp;</a></span>surroundingContour() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a77a3bf655fb87f08c40a5a5808bd1de0">&#9670;&nbsp;</a></span>surroundingContour()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -988,62 +520,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a2df9b7935adaeda2d6e9914c59444eff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2df9b7935adaeda2d6e9914c59444eff">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MRE::TEST </td>
-          <td>(</td>
-          <td class="paramtype">MREAlgorithms&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">MeshBoolean&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af0372fc3ccbd135244315e54bf3fb7c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0372fc3ccbd135244315e54bf3fb7c1">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MRE::TEST </td>
-          <td>(</td>
-          <td class="paramtype">MREAlgorithms&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">MeshBooleanFacade&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

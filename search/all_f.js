@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['valid_66',['valid',['../struct_m_r_e_1_1_boolean_result.html#aeb4c3e20edf6b71ddd3c7145b68f2ca4',1,'MRE::BooleanResult']]]
+  ['xf_52',['xf',['../struct_m_r_e_1_1_transformed_mesh.html#a2709c282925fbe8e9874bd82e30d38ec',1,'MRE::TransformedMesh']]]
 ];

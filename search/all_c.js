@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['surroundingcontour_62',['surroundingContour',['../namespace_m_r_e.html#a381ff89309bb97c8c5700b1746795a37',1,'MRE::surroundingContour(const Mesh &amp;mesh, std::vector&lt; EdgeId &gt; e, const EdgeMetric &amp;edgeMetric, const Vector3f &amp;dir)'],['../namespace_m_r_e.html#a77a3bf655fb87f08c40a5a5808bd1de0',1,'MRE::surroundingContour(const MR::Mesh &amp;mesh, const std::vector&lt; MR::EdgeId &gt; includeEdgeOrgs, const MR::EdgeMetric &amp;edgeMetric, const MR::Vector3f &amp;dir)']]]
+  ['transformedmesh_49',['TransformedMesh',['../struct_m_r_e_1_1_transformed_mesh.html',1,'MRE::TransformedMesh'],['../struct_m_r_e_1_1_transformed_mesh.html#ad33fa074c78c671295832ed5d9c3e485',1,'MRE::TransformedMesh::TransformedMesh()=default'],['../struct_m_r_e_1_1_transformed_mesh.html#a7dc72c8e71df16566663227cf26a2da3',1,'MRE::TransformedMesh::TransformedMesh(MR::Mesh mesh, const MR::AffineXf3f &amp;xf={})']]]
 ];

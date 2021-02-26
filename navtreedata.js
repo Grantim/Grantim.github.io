@@ -55,7 +55,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_m_r_e_algorithms_pch_8cpp.html"
+"_m_r_e_algorithms_pch_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
